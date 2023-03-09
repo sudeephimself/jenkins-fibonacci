@@ -21,6 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
+                echo("This goes back to root directory and selects the required file")
                 sh("./scripts/fibonacci.sh ${env.NUMBER}")
             }
         }
